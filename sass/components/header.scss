@@ -1,0 +1,77 @@
+.conteiner {
+    @extend  %Flex-conteiner;
+  width: 100%;
+  border-bottom: 1px solid  $border-color;
+}
+.logo-menu-link {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: $black-icon-color;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: $timing-transform;
+  transition-timing-function: $timing-function;
+  &::after {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $nav-color;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transform: scaleX(0);
+    transition-property: opacity, transform;
+    transition-duration: $timing-transform;
+    transition-timing-function: $timing-function;
+    }
+  &:hover,
+  &:focus-within {
+    color: $nav-color;
+  }
+  &:hover::after,
+    &:focus-within::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+}
+.logo-menu-contact {
+  display: flex;
+  padding: 0;
+  margin: auto;
+  font-style: normal;
+  font-weight: 500;
+  &-data {
+    color: $grey-color;
+  }
+  & li:not(:first-child) {
+    margin-left: 30px;
+  }
+  &-icon {
+    fill: $grey-color;
+    transition-property: color;
+    transition-duration: $timing-transform;
+    transition-timing-function: $timing-function;
+  }
+}
+.logo-menu {
+  @extend .logo-menu-contact;
+  margin-left: 84px;
+  &li:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+.logo-menu-contact-conteiner:hover .logo-menu-contact-icon,
+.logo-menu-contact-conteiner:focus-within .logo-menu-contact-icon {
+  fill: $nav-color;
+}
+.logo-menu-contact-conteiner:hover .logo-menu-contact-data,
+.logo-menu-contact-conteiner:focus-within .logo-menu-contact-data {
+  color: $nav-color;
+}
