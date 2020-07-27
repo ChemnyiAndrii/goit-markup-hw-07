@@ -1,15 +1,18 @@
+/*ФУТЕР*/
 .footer {
   @extend %Flex-conteiner;
   background: #2f303a;
-  width: 100%;
+  max-width: 1600px;
   color: $footer-color;
-  align-items: baseline;
-  flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
 }
 .footer-conteiner {
   padding-bottom: 60px;
   border: none;
-  padding-top: 45px;
+  padding-top: 60px;
+  background: #2f303a;
+  align-items: baseline;
 }
 .adressa {
   font-size: 14px;
@@ -17,7 +20,7 @@
   letter-spacing: 0.03em;
   padding-top: 20px;
   margin-right: 69px;
-  & a {
+  a {
     color: rgba(255, 255, 255, 0.6);
     margin-top: 9px;
   }
@@ -28,7 +31,8 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  & li:not(:first-child) {
+  padding-top: 12px;
+  li:not(:first-child) {
     margin-left: 10px;
   }
 }
@@ -40,10 +44,10 @@
   height: 44px;
   width: 44px;
   border-radius: 100%;
-  fill:  $footer-color;
+  fill: $footer-color;
   transition-property: background-color;
   transition-duration: $timing-transform;
-  transition-timing-function:  $timing-function;
+  transition-timing-function: $timing-function;
 }
 .footer-social-icon:hover {
   background-color: $nav-color;
@@ -55,6 +59,7 @@
   margin-left: 94px;
   display: inline-flex;
   width: 570px;
+  padding-top: 12px;
 }
 
 .mail-bottom::after {

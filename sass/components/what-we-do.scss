@@ -1,3 +1,4 @@
+/*Чим ми займаємось*/
 .what-we-do {
     margin-top: 94px;
     margin-bottom: 94px;
@@ -13,7 +14,7 @@
     @extend %Flex-conteiner;
     display: flex;
     margin-top: 50px;
-    & li {
+     li {
         width: 370px;
         max-height: 294px;
         position: relative;
@@ -21,12 +22,12 @@
         &:not(:first-child) {
             margin-left: 30px;
           }
-        & p {
+         p {
             text-align: center;
             padding-top: 27px;
           }
       }
-    & img {
+     img {
         display: block;
       }
   }

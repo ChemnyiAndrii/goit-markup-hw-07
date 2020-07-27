@@ -1,3 +1,4 @@
+/*НАша команда*/
 .team {
     background: #f5f4fa;
     padding: 94px 0px;
@@ -7,14 +8,14 @@
     display: flex;
     margin-top: 50px;
     width: 1170px;
-    &>li {
+    >li {
       width: 270px;
       background:  $footer-color;
       box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12);
       border-radius: 0px 0px 4px 4px;
     }
-    & li:not(:first-child) {
+     li:not(:first-child) {
       margin-left: 30px;
     }
   }
@@ -46,7 +47,7 @@
     @extend %Flex-conteiner;
     display: flex;
     padding-bottom: 24px;
-    & svg {
+     svg {
       height: 44px;
       width: 44px;
       fill: $grey-light;
@@ -60,7 +61,7 @@
         border-radius: 50%;
       }
     }
-    & li:not(:first-child) {
+     li:not(:first-child) {
       margin-left: 10px;
     }
   }

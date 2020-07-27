@@ -1,3 +1,4 @@
+/*наші партнери*/
 .client {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -6,7 +7,7 @@
   @extend %Flex-conteiner;
   margin-top: 50px;
   display: flex;
-  & li {
+   li {
     @extend %Flex-conteiner;
     width: 170px;
     height: 90px;
@@ -30,7 +31,7 @@
   width: 170px;
   height: 90px;
   @extend %Flex-conteiner;
-  & svg {
+   svg {
     fill: $grey-light;
     transition-property: fill;
     transition-duration: $timing-transform;

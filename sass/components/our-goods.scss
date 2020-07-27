@@ -1,8 +1,9 @@
+/*Переваги*/
 .our-goods {
   @extend %Flex-conteiner;
   margin-top: 94px;
   display: flex;
-  & li {
+  li {
     width: 270px;
     height: 251px;
     &:not(:first-child) {
