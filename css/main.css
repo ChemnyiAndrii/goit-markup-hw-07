@@ -494,6 +494,7 @@ ul {
   background: #f5f4fa;
   padding: 94px 0px;
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .team-card {
@@ -765,6 +766,11 @@ ul {
   color: #757575;
 }
 
+.form-textarea:focus-within {
+  border-color: #2196f3;
+  outline: none;
+}
+
 .form-buttom {
   width: 200px;
   height: 50px;
@@ -796,6 +802,11 @@ ul {
   fill: #2196f3;
   color: #2196f3;
   font-size: 12px;
+}
+
+.form-container:focus-within .form-input-text {
+  border-color: #2196f3;
+  outline: none;
 }
 
 .form-icon {

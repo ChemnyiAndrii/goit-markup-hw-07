@@ -61,6 +61,10 @@
     letter-spacing: 0.01em;
     color: $grey-color;
   }
+  &:focus-within{
+    border-color: #2196f3;
+    outline: none;
+  }
 }
 .form-buttom {
   width: 200px;
@@ -88,6 +92,11 @@
     fill: $nav-color;
     color: $nav-color;
     font-size: 12px;
+  }
+
+  &:focus-within .form-input-text {
+    border-color: #2196f3;
+    outline: none;
   }
 }
 
