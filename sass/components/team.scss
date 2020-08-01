@@ -2,8 +2,10 @@
 .team {
     background: #f5f4fa;
     padding: 94px 0px;
-    max-width: 1600px;
-    margin: 0 auto;
+    &>div{
+      max-width: 1600px;
+      margin: 0 auto;
+    }
   }
   .team-card {
     @extend %Flex-conteiner;

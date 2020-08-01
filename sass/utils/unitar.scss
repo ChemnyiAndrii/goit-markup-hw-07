@@ -25,6 +25,9 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+header, section, footer {
+  width: 100%;
+}
 %Flex-conteiner {
   display: inline-flex;
   align-items: center;

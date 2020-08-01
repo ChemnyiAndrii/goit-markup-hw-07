@@ -37,6 +37,10 @@ ul {
   padding: 0px;
 }
 
+header, section, footer {
+  width: 100%;
+}
+
 .conteiner, .bottom-baaner-conteiner, .mail-bottom, .footer, .our-goods, .our-goods-images, .we-do, .team-card, .team-card-comteiner, .team-card-social, .partner, .partner li, .partner-icon, .popup, .main-conteiner-portfolio, .panel, .project {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -238,7 +242,6 @@ ul {
 /*ФУТЕР*/
 .footer {
   background: #2f303a;
-  max-width: 1600px;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,6 +250,7 @@ ul {
 }
 
 .footer-conteiner {
+  max-width: 1600px;
   padding-bottom: 60px;
   border: none;
   padding-top: 60px;
@@ -493,6 +497,9 @@ ul {
 .team {
   background: #f5f4fa;
   padding: 94px 0px;
+}
+
+.team > div {
   max-width: 1600px;
   margin: 0 auto;
 }
